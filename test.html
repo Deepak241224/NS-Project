@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Do not edit this you need to use JS to scrap prices and display their sum -->
+    <h1>Grocery List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Sr. No.</th>
+                <th>Title</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Item-1</td>
+                <td data-ns-test="price" id="first">100</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Item-2</td>
+                <td data-ns-test="price" id="second">200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Item-3</td>
+                <td data-ns-test="price" id="third">2</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Item-4</td>
+                <td data-ns-test="price" id="four">1</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button onClick='calcTotal()' type="submit">Total</button>
+    <p id="result"></p>
+</body>
+<script>
+    function calcTotal() {
+        var a = document.getElementById("first").innerHTML;
+        var b = document.getElementById("second").innerHTML;
+        var c = document.getElementById("third").innerHTML;
+        var d = document.getElementById("four").innerHTML;
+        var w = parseInt(a);
+        var x = parseInt(b);
+        var y = parseInt(c);
+        var z = parseInt(d);
+        var sum = w + x + y + z;
+        console.log(sum);
+        var res = document.getElementById("result").innerHTML = `data : ${sum}`;
+    }
+</script>
+
+</html>
