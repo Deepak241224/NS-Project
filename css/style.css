@@ -120,7 +120,7 @@ a {
 
 .fp {
     color: #b5460f;
-    margin: 0 15px;
+    margin-left: 0 15px;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -144,17 +144,25 @@ a {
     border: 2px solid rgba(255, 221, 0, 0.878);
 }
 
+.left-item-card2 a {
+    font-weight: 600;
+    color: #f40a0a;
+}
+
 .left-item-card2 h4 {
     font-size: 28px;
     font-weight: 400;
 }
 
-.left-item-card2 a {
+.left-item-card2 {
+    /* margin-top: 25px; */
     text-decoration: none;
-    color: black;
+    /* color: black; */
 }
 
 .lp {
+    margin-bottom: 10px;
+    /* margin-top: 10px; */
     font-size: 17px;
 }
 
@@ -624,6 +632,7 @@ footer {
 }
 
 .foot-logo input {
+    padding-left: 10px;
     /* border: none; */
     font-size: 18px;
     height: 22%;
