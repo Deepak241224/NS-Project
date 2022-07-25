@@ -1,0 +1,5 @@
+@media(min-width:1441px) and (max-width:1541px) {
+    .column5 {
+        display: none;
+    }
+}
